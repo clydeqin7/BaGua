@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阴阳</title>
+    <style type="text/css">
+        .yingyang{
+            display: inline-block;
+            width:350px;
+            height:350px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#000000 51%,#000000 100%);
+            position: relative;
+            margin-top:287px;
+        }
+
+        .yingyang:before{
+            content:"";
+            width:25px;
+            height:25px;
+            background:#fff;
+            border:75px solid #000000;
+            border-radius: 50%;
+            position:absolute;
+            top:50%;
+            left:25%;
+        }
+         .yingyang:after{
+            content:"";
+            width:25px;
+            height:25px;
+            background:#000000;
+            border:75px solid #fff;
+            border-radius: 50%;
+            position:absolute;
+            top:0;
+            left:25%;
+        }
+        .bugua{
+            width: 848px;
+            height: 923px;
+            text-align: center;
+            background-image: url("./timg.jpg");
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bugua">
+        <div class="yingyang"></div>
+    </div> 
+    
+</body>
+</html>
