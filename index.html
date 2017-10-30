@@ -15,6 +15,9 @@
             background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,#231816 51%,#231816 100%);
             position: relative;
             margin-top: 316px;
+            animation-name: ratation;
+            animation-duration: 12s;
+            animation-iteration-count:infinite;
         }
 
         .yingyang:before{
@@ -45,6 +48,15 @@
             text-align: center;
             display: inline-block;
             background-image: url("./timg.jpg");
+        }
+
+        @keyframes ratation {
+            from {
+                transform: ratate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
